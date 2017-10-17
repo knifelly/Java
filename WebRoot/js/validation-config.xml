@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE validation-config SYSTEM "validation-config.dtd">
+<validation-config lang="auto">
+	<form id="form1" show-error="alert" show-type="all">
+		<field name="userid" display-name="用户名" onfail="">
+			<depend name="required" />
+		</field>
+		<field name="pwd" display-name="密码">
+			<depend name="required" />
+			
+		</field>
+	</form>
+	<form id="form2" show-error="alert" show-type="all">
+		<field name="name" display-name="课程名称" onfail="">
+			<depend name="required" />
+			
+		</field>
+		<field name="price" display-name="课程价格">
+			<depend name="required" />
+			
+		</field>
+		<field name="teacher" display-name="讲授教师">
+			<depend name="required" />
+			
+		</field>
+		<field name="kind" display-name="课程类别">
+			<depend name="required" />
+			
+		</field>
+		<field name="photo" display-name="图片路径">
+			<depend name="required" />
+			
+		</field>
+		
+		<field name="brief" display-name="简介">
+			<depend name="required" />
+			
+		</field>
+		
+	</form>
+	<form id="form3" show-error="alert" show-type="all">
+		<field name="username" display-name="用户名" onfail="">
+			<depend name="required" />
+			
+		</field>
+		<field name="tel" display-name="手机号" onfail="">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="email" display-name="电子邮件">
+		 <depend name="required" />
+		 <depend name="email"/>
+		</field>
+		<field name="talk" display-name="留言内容" onfail="">
+			<depend name="required" />
+			<depend name="chineseChar"/>
+		</field>
+		
+	</form>
+	<form id="form4" show-error="alert" show-type="all">
+		<field name="username" display-name="用户名" onfail="">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="pwd" display-name="密码">
+			<depend name="required" />
+			<depend name="commonChar" />
+			</field>
+			<field name="pwd2" display-name="确认密码">
+			<depend name="equalsField" param0="pwd"/>
+		</field>   
+		<field name="tel" display-name="手机号" onfail="">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="email" display-name="电子邮件">
+		<depend name="email"/>
+		</field>
+	</form>
+	<form  id="form6" show-error="alert" show-type="all">
+		<field name="tname" display-name="教师名" onfail="">
+			<depend name="required" />
+			
+		</field>
+		<field name="tkind" display-name="授课类别">
+			<depend name="required" />
+			
+			</field> 
+		<field name="tphoto" display-name="照片" onfail="">
+			<depend name="required" />
+			
+		</field>
+		<field name="tbrief" display-name="简介">
+			<depend name="required" />
+			
+			</field> 
+	</form>
+</validation-config>
